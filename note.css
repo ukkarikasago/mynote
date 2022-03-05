@@ -1,4 +1,68 @@
-#header{
-    background-color: aqua;
-    size: 100px;
+@charset "UTF-8";
+
+/* テキストの装飾を行いません？ */
+a {
+    text-decoration: none;
+}
+/*リンクの色は 親要素から取得 */
+a,a:visited,a:hover,a:active{
+    color: inherit;
+}
+/* リストの・をなくす */
+li {
+    list-style: none;
+}
+/* 背景色と文字色を指定 */
+body{
+    background-color: #F2D5CE;
+    font-family: "Yu Gothic""YuGothic";
+    color: #593C3C;
+}
+/* ヘッダーの背景色を指定 */
+/* 要素横並び、上下左右を中央にした */
+.header{
+    background-color: #ffffff69;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* メインとサブを横並び */
+.content{
+    display: flex;
+}
+.content h2{
+    background-color: #D99CA169;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+}
+.content h3{
+    border-bottom:dotted;
+    border-color:#D99CA169; 
+}
+/* メインコンテンツの背景設定 */
+.main-content{
+    background-color: #ffffff69;
+    border-radius: 10px;
+    flex: 2;
+    margin-top: 20px;
+    padding: 20px;
+}
+/* サブコンテンツの背景設定 */
+.sab-content{
+    background-color: #ffffff69;
+    border-radius: 10px;
+    flex: 1;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 20px;
+}
+/* フッターの背景設定 */
+.footer{
+    background-color: #ffffff69;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
 }

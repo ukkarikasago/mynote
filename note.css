@@ -8,6 +8,10 @@ a {
 a,a:visited,a:hover,a:active{
     color: inherit;
 }
+/* リストの左側にできる余白を消す */
+ul{
+    padding-left: 0px;
+}
 /* リストの・をなくす */
 li {
     list-style: none;
@@ -30,7 +34,11 @@ body{
 /* メインとサブを横並び */
 .content{
     display: flex;
+    max-width: 1000px;
+    justify-content: center;
 }
+/* コンテンツのh2 */
+/* 背景色、帯のバランス、左右を中央に */
 .content h2{
     background-color: #D99CA169;
     border-radius: 10px;
@@ -41,6 +49,9 @@ body{
 .content h3{
     border-bottom:dotted;
     border-color:#D99CA169; 
+}
+.content .text{
+    white-space: pre-line;
 }
 /* メインコンテンツの背景設定 */
 .main-content{

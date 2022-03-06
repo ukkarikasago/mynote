@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+::selection{
+    background-color: #593C3C;
+    color: #F2D5CE;
+}
 /* テキストの装飾を行いません？ */
 a {
     text-decoration: none;
@@ -21,6 +25,7 @@ body{
     background-color: #F2D5CE;
     font-family: "Yu Gothic""YuGothic";
     color: #593C3C;
+    
 }
 /* ヘッダーの背景色を指定 */
 /* 要素横並び、上下左右を中央にした */
@@ -34,8 +39,8 @@ body{
 /* メインとサブを横並び */
 .content{
     display: flex;
-    max-width: 1000px;
-    justify-content: center;
+    /* max-width: 1000px;にしたいけど1000px以上の時に真ん中に来てくれない！ */
+    /* あとmediaで600~800くらいでNewsの位置かえたい */
 }
 /* コンテンツのh2 */
 /* 背景色、帯のバランス、左右を中央に */
@@ -46,6 +51,8 @@ body{
     padding-bottom: 2px;
     text-align: center;
 }
+/* コンテンツのh3 */
+/* 文字下に点線 */
 .content h3{
     border-bottom:dotted;
     border-color:#D99CA169; 
@@ -73,7 +80,9 @@ body{
 /* フッターの背景設定 */
 .footer{
     background-color: #ffffff69;
+    text-align: center;
     border-radius: 10px;
     margin-top: 20px;
     padding: 20px;
 }
+
